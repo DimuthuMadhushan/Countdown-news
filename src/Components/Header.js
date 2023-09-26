@@ -10,20 +10,23 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { useNavigate } from 'react-router-dom';
 
-const pages = ['General', 'Health', 'Sports','Business','Sports','Entertainment'];
+const pages = ['Sports'];
 
 
 
 function Header() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-
+    const navigate=useNavigate();
   
     const handleOpenNavMenu = (event) => {
       setAnchorElNav(event.currentTarget);
     };
-    const handleCloseNavMenu = () => {
+    const handleCloseNavMenu = (event) => {
       setAnchorElNav(null);
+        navigate('/sports');
+      
     };
   return (
     <div>
@@ -90,7 +93,7 @@ function Header() {
             variant="h5"
             noWrap
             component="a"
-            href="/"
+            href=""
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

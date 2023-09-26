@@ -1,0 +1,28 @@
+.topic{
+    font-size: 5rem;
+    font-weight: bolder;
+    color:black;
+}
+.news{
+    
+    font-size: 3rem;
+    font-weight: bolder;
+    color:red;
+}
+ 
+  @media screen and (max-width: 600px) and (min-width: 400px)  {
+    .topic {
+      font-size: 3rem;
+    }
+    .news{
+        font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .topic {
+      font-size: 2rem;
+    }
+    .news{
+        font-size: 2rem;
+    }
+  }
